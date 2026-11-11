@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Wayveros — thoughtfully designed journeys, made personal.">
+<title>WAYVEROS — Travel, thoughtfully designed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#172321;--muted:#68736d;--cream:#f7f5ef;--paper:#fffefa;--gold:#b89a68;--line:#e5e1d7;--forest:#233c35}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.topline{height:4px;background:var(--gold)}header{height:82px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;background:rgba(247,245,239,.96);position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(229,225,215,.75)}.brand{font-size:22px;letter-spacing:.23em;font-weight:700}.brand small{display:block;font-size:8px;letter-spacing:.34em;color:var(--muted);font-weight:500;margin-top:4px}.nav{display:flex;gap:34px;align-items:center;font-size:12px;letter-spacing:.07em;color:#46534d}.nav a:hover{color:var(--gold)}.nav-cta,.btn{background:var(--forest);color:white;padding:14px 22px;border:0;letter-spacing:.1em;text-transform:uppercase;font-size:10px;cursor:pointer;transition:.2s}.nav-cta:hover,.btn:hover{background:#34564b;transform:translateY(-1px)}.menu{display:none;background:none;border:0;font-size:24px}.hero{min-height:650px;height:calc(88vh - 82px);max-height:850px;position:relative;color:white;display:flex;align-items:center;overflow:hidden;background:#263c37}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,25,23,.68),rgba(12,25,23,.15) 72%),url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2200&q=88') center 54%/cover}.hero-content{position:relative;z-index:1;margin-left:10vw;max-width:660px;padding:50px 24px}.eyebrow{font-size:10px;letter-spacing:.27em;text-transform:uppercase;color:var(--gold);font-weight:600}.hero h1{font:500 clamp(48px,6.5vw,88px)/1.05 'Playfair Display',serif;margin:25px 0}.hero p{font-size:15px;line-height:1.9;color:rgba(255,255,255,.82);max-width:470px;margin:0 0 34px}.hero .btn{background:#c0a477;color:#182822;padding:17px 27px}.hero-note{position:absolute;bottom:34px;right:6vw;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.75)}section{padding:105px 8vw}.section-head{text-align:center;max-width:700px;margin:0 auto 54px}.section-head h2{font:500 clamp(34px,4vw,52px)/1.15 'Playfair Display',serif;margin:15px 0}.section-head p{color:var(--muted);font-size:13px;line-height:1.8}.intro{display:grid;grid-template-columns:1fr 1fr;gap:9vw;align-items:center;background:var(--paper)}.intro-photo{height:500px;background:url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1200&q=85') center/cover}.intro-copy h2{font:500 48px/1.15 'Playfair Display',serif;margin:18px 0}.intro-copy p{color:var(--muted);font-size:13px;line-height:2;max-width:480px}.text-link{display:inline-block;margin-top:18px;padding-bottom:8px;border-bottom:1px solid var(--gold);font-size:10px;letter-spacing:.16em;text-transform:uppercase}.destinations{background:#ecebe4}.destination-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px}.destination{height:390px;position:relative;overflow:hidden;color:white;background-size:cover;background-position:center}.destination:nth-child(1){background-image:linear-gradient(0deg,rgba(0,0,0,.5),transparent 60%),url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85')}.destination:nth-child(2){background-image:linear-gradient(0deg,rgba(0,0,0,.5),transparent 60%),url('https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=85')}.destination:nth-child(3){background-image:linear-gradient(0deg,rgba(0,0,0,.5),transparent 60%),url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=85')}.destination div{position:absolute;bottom:25px;left:25px}.destination small{font-size:9px;letter-spacing:.2em;text-transform:uppercase}.destination h3{font:500 30px 'Playfair Display';margin:7px 0}.pricing{background:var(--paper)}.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.price-card{background:#f8f7f2;border:1px solid var(--line);padding:30px 27px;display:flex;flex-direction:column;min-height:330px;transition:.25s}.price-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px #17232112}.price-card .tag{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}.price-card h3{font:500 27px 'Playfair Display';margin:18px 0 8px}.price{font:500 38px 'Playfair Display';margin:7px 0}.price span{font:400 11px 'DM Sans';color:var(--muted)}.featured .price span,.featured p{color:#c4cec8}.price-card p{font-size:12px;line-height:1.8;color:var(--muted);min-height:60px}.price-card ul{padding:0;list-style:none;margin:10px 0 25px;font-size:11px;line-height:2.2;color:inherit}.price-card li:before{content:'—';color:var(--gold);margin-right:9px}.price-card button{margin-top:auto;align-self:flex-start;background:transparent;border:0;border-bottom:1px solid var(--gold);padding:8px 0;color:inherit;font-size:10px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}.steps{background:var(--cream)}.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:50px}.step{border-top:1px solid var(--gold);padding-top:22px}.step b{font:400 34px 'Playfair Display';color:var(--gold)}.step h3{font:500 24px 'Playfair Display';margin:15px 0}.step p{font-size:12px;line-height:1.9;color:var(--muted)}.cta-band{padding:80px 8vw;background:var(--forest);color:white;text-align:center}.cta-band h2{font:500 clamp(34px,4vw,50px) 'Playfair Display';margin:12px 0}.cta-band p{font-size:12px;color:#c4cec8;margin-bottom:28px}.cta-band .btn{background:#c0a477;color:#172321}footer{background:#172321;color:white;padding:55px 8vw 25px}.footer-top{display:flex;justify-content:space-between;gap:40px;padding-bottom:45px}.footer-brand{font-size:20px;letter-spacing:.23em}.footer-brand p{font-size:11px;line-height:1.8;color:#aab6af;letter-spacing:0;max-width:280px}.footer-links{display:flex;gap:65px;font-size:11px;color:#c4cec8}.footer-links div{display:grid;gap:13px}.footer-links strong{font-size:9px;letter-spacing:.18em;color:var(--gold);text-transform:uppercase}.copyright{border-top:1px solid #405149;padding-top:20px;font-size:9px;color:#87968e;letter-spacing:.08em;display:flex;justify-content:space-between}.modal{position:fixed;inset:0;background:#101b19b8;z-index:30;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-box{background:var(--paper);width:min(650px,100%);max-height:90vh;overflow:auto;padding:35px}.modal-head{display:flex;justify-content:space-between;align-items:center}.modal-head h2{font:500 32px 'Playfair Display';margin:0}.close{border:0;background:none;font-size:25px;cursor:pointer}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:25px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.field input,.field select,.field textarea{width:100%;padding:13px;border:1px solid var(--line);background:white;color:var(--ink);font-size:12px}.field textarea{min-height:85px;resize:vertical}.form-actions{display:flex;align-items:center;justify-content:space-between;margin-top:22px;gap:15px}.form-actions small{font-size:10px;color:var(--muted)}.success{display:none;padding:20px;background:#edf2ed;margin-top:20px;font-size:13px;line-height:1.8}.success.show{display:block}
+
+.promo-ribbon{background:#1b302b;color:#f8f5ed;text-align:center;padding:13px 18px;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+.promo-ribbon strong{color:#d7bd91;font-weight:600}.promo-ribbon a{border-bottom:1px solid #d7bd91;margin-left:9px;padding-bottom:2px}
+.hero-kicker{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(221,202,165,.55);padding:10px 14px;margin-bottom:8px;color:#ead9b9;font-size:9px;letter-spacing:.19em;text-transform:uppercase;background:#15251f55}
+.launch-note{display:flex;align-items:center;justify-content:center;gap:14px;background:#eee9dc;padding:18px 20px;text-align:center;color:#4d5a52;font-size:11px;letter-spacing:.04em}
+.launch-note b{color:#8d7045;letter-spacing:.12em;text-transform:uppercase}
+.price-card .was{font:400 13px 'DM Sans';color:#8d9189;text-decoration:line-through;margin-left:8px}
+.price-card .offer-price{font:500 38px 'Playfair Display';color:#8b7048}
+.featured .offer-price{color:#e1c99f}.featured .was{color:#b7c0b9}
+.holiday{background:#172923;color:white}.holiday .section-head p{color:#c4cec8}
+.holiday-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.holiday-card{position:relative;min-height:440px;display:flex;flex-direction:column;justify-content:flex-end;padding:27px;background-size:cover;background-position:center;overflow:hidden}
+.holiday-card:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,18,16,.88),rgba(8,18,16,.05) 85%)}
+.holiday-card>*{position:relative;z-index:1}
+.holiday-card:nth-child(1){background-image:url('https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&w=1100&q=85')}
+.holiday-card:nth-child(2){background-image:url('https://images.unsplash.com/photo-1467810563316-b5476525c0f9?auto=format&fit=crop&w=1100&q=85')}
+.holiday-card:nth-child(3){background-image:url('https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=1100&q=85')}
+.holiday-card .eyebrow{color:#e0c79b}.holiday-card h3{font:500 31px 'Playfair Display';margin:10px 0}.holiday-card p{font-size:12px;line-height:1.8;color:#e2e6e2;max-width:340px}.holiday-meta{font-size:10px;letter-spacing:.12em;color:#e0c79b;text-transform:uppercase;margin:5px 0 18px}
+.holiday-card button{align-self:flex-start;background:transparent;color:white;border:0;border-bottom:1px solid #d0b485;padding:9px 0;font-size:10px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+.fineprint{text-align:center;color:#858d85;font-size:10px;line-height:1.8;margin:24px auto 0;max-width:760px}
+
+.how-assurance{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:48px auto 0;padding:25px 28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-width:1080px}
+.how-assurance div{display:flex;flex-direction:column;gap:8px}
+.how-assurance strong{font:500 18px 'Playfair Display';color:var(--forest)}
+.how-assurance span{font-size:12px;line-height:1.8;color:var(--muted)}
+.step-grid{grid-template-columns:repeat(4,1fr)}
+.step{min-width:0}
+.step p{line-height:1.85}
+@media(max-width:850px){.step-grid{grid-template-columns:1fr 1fr}.how-assurance{grid-template-columns:1fr;gap:18px}}
+@media(max-width:560px){.step-grid{grid-template-columns:1fr}.how-assurance{padding:22px 4px}}
+
+@media(max-width:850px){.holiday-grid{grid-template-columns:1fr 1fr}.holiday-card:last-child{grid-column:1/-1}}
+@media(max-width:560px){.holiday-grid{grid-template-columns:1fr}.holiday-card,.holiday-card:last-child{grid-column:auto;min-height:380px}.promo-ribbon{font-size:9px;line-height:1.8}.launch-note{display:block;line-height:1.9}.price-card .offer-price{font-size:35px}}
+
+@media(max-width:850px){.nav{display:none;position:absolute;top:82px;left:0;right:0;background:var(--cream);padding:25px 7vw;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.nav.open{display:flex}.menu{display:block}.intro{grid-template-columns:1fr;gap:35px}.intro-photo{height:350px}.destination-grid{grid-template-columns:1fr 1fr}.destination:first-child{grid-column:1/-1}.price-grid{grid-template-columns:1fr 1fr}.footer-top{flex-direction:column}.footer-links{gap:35px}}
+@media(max-width:560px){header{padding:0 6vw}.brand{font-size:18px}section{padding:75px 6vw}.hero{height:680px;min-height:0}.hero-content{margin:0;padding:35px 7vw}.hero h1{font-size:53px}.hero-note{display:none}.destination-grid,.price-grid,.step-grid{grid-template-columns:1fr}.destination,.destination:first-child{height:340px;grid-column:auto}.price-card{min-height:300px}.step-grid{gap:35px}.footer-links{flex-wrap:wrap}.copyright{gap:12px;flex-direction:column}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.modal-box{padding:25px 20px}}
+
+/* WAYVEROS visual refinement — cohesive editorial luxury system */
+:root{
+  --ink:#172521;--muted:#68766f;--cream:#f5f3ed;--paper:#fffefa;
+  --gold:#b69a70;--line:#e5e0d5;--forest:#203b33;--forest-deep:#172b26;
+  --serif:"Playfair Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif;
+}
+html{scroll-padding-top:92px}
+body{font-family:var(--sans);font-size:14px;letter-spacing:.005em;-webkit-font-smoothing:antialiased}
+.topline{height:3px}
+.promo-ribbon{padding:11px 18px;font-size:9px;letter-spacing:.14em}
+header{height:88px;padding:0 clamp(22px,6.5vw,108px);backdrop-filter:blur(14px)}
+.brand{font-size:21px;letter-spacing:.25em}
+.brand small{font-size:8px;letter-spacing:.29em}
+.nav{gap:clamp(15px,2.25vw,34px);font-size:10px;letter-spacing:.1em}
+.nav-cta,.btn{font-size:9px;letter-spacing:.15em;padding:15px 23px;transition:background .25s ease,transform .25s ease,box-shadow .25s ease}
+.nav-cta:hover,.btn:hover{box-shadow:0 9px 22px #14241f20}
+.hero{height:min(790px,calc(91vh - 88px));min-height:590px}
+.hero:before{background:linear-gradient(90deg,rgba(10,24,21,.72) 0%,rgba(10,24,21,.36) 52%,rgba(10,24,21,.08) 100%),url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2200&q=88') center 54%/cover}
+.hero-content{margin-left:clamp(5vw,10vw,160px);max-width:690px;padding:55px 24px}
+.hero-kicker{font-size:8px;letter-spacing:.17em;padding:10px 13px}
+.eyebrow{font-size:9px;letter-spacing:.23em}
+.hero h1{font-family:var(--serif);font-size:clamp(54px,7vw,96px);line-height:1.02;letter-spacing:-.035em;margin:25px 0 22px}
+.hero p{font-size:14px;line-height:2;max-width:450px}
+.hero .btn{padding:17px 27px}
+.hero-note{font-size:8px;letter-spacing:.19em}
+section{padding:clamp(76px,8vw,116px) clamp(22px,8vw,132px)}
+.section-head{margin-bottom:48px;max-width:680px}
+.section-head h2,.intro-copy h2{font-family:var(--serif);letter-spacing:-.025em}
+.section-head h2{font-size:clamp(36px,4.1vw,54px);line-height:1.12;margin:16px 0}
+.section-head p{font-size:13px;line-height:1.95;max-width:590px;margin-inline:auto}
+.intro{gap:clamp(42px,8vw,120px)}
+.intro-photo{height:clamp(360px,42vw,540px);background-position:center}
+.intro-copy h2{font-size:clamp(39px,4.2vw,56px);line-height:1.12;margin:17px 0 22px}
+.intro-copy p{font-size:13px;line-height:2.05}
+.text-link{font-size:9px;letter-spacing:.17em}
+.destinations{background:#eeede6}
+.destination-grid{gap:16px}
+.destination{height:clamp(310px,34vw,420px);transition:transform .35s ease,filter .35s ease}
+.destination:hover{transform:translateY(-4px);filter:saturate(1.08)}
+.destination div{left:27px;bottom:27px}
+.destination h3{font-size:clamp(25px,2.3vw,32px)}
+.price-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.price-card{padding:30px 27px;min-height:355px;border-radius:2px}
+.price-card h3{font-size:26px;line-height:1.2}
+.price-card .offer-price,.price-card .price{font-family:var(--serif);font-size:37px;letter-spacing:-.025em}
+.price-card p{font-size:12px;line-height:1.9;min-height:67px}
+.price-card ul{font-size:11px;line-height:2.25}
+.price-card button{font-size:9px;letter-spacing:.15em}
+
+.launch-note{font-size:10px;line-height:1.8;padding:19px 22px}
+.holiday{background:var(--forest-deep)}
+.holiday-card{min-height:440px;padding:30px;transition:transform .35s ease}
+.holiday-card:hover{transform:translateY(-5px)}
+.holiday-card h3{font-family:var(--serif);font-size:34px;line-height:1.1}
+.holiday-card p{font-size:12px;line-height:1.9;max-width:330px}
+.holiday-card button{font-size:9px;letter-spacing:.13em}
+.fineprint{font-size:10px;line-height:1.9;color:var(--muted);max-width:900px;margin:24px auto 0}
+.steps{background:#f5f3ed}
+.step-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,3vw,44px)}
+.step{padding-top:21px}
+.step b{font-size:33px}
+.step h3{font-size:21px;line-height:1.25;min-height:53px}
+.step p{font-size:11px;line-height:1.95}
+.how-assurance{margin:55px auto 0;padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.how-assurance strong{font-size:17px}
+.how-assurance span{font-size:11px;line-height:1.9}
+.cta-band{padding:90px 22px;background:linear-gradient(135deg,#203b33,#172b26)}
+.cta-band h2{font-family:var(--serif);letter-spacing:-.025em}
+.cta-band p{font-size:12px;line-height:1.9}
+footer{padding:62px clamp(22px,8vw,132px) 25px}
+.footer-brand{font-size:19px;letter-spacing:.24em}
+.footer-brand p{font-size:11px;line-height:2}
+.footer-links{gap:clamp(35px,7vw,100px)}
+.footer-links div{gap:15px}
+.footer-links a:hover{color:#e0c69c}
+.copyright{font-size:8px;letter-spacing:.12em}
+.modal{backdrop-filter:blur(5px)}
+.modal-box{border-radius:3px;box-shadow:0 25px 90px #08110f55;padding:clamp(24px,4vw,42px)}
+.modal-head h2{font-family:var(--serif);font-size:clamp(28px,3vw,36px)}
+.field input,.field select,.field textarea{border-radius:2px;transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px #b69a7020}
+button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+@media(max-width:1050px){
+ .nav{gap:14px;font-size:9px}
+ .nav-cta{padding:13px 15px}
+ .price-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .step-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:38px}
+}
+@media(max-width:850px){
+ header{height:76px}
+ .nav{top:76px;padding:25px 7vw;gap:20px}
+ .nav a{font-size:11px}
+ .hero{height:690px;min-height:0}
+ .hero-content{margin-left:3vw}
+ .intro{grid-template-columns:1fr;gap:35px}
+ .intro-photo{height:420px}
+ .destination-grid{grid-template-columns:1fr 1fr}
+ .destination:first-child{grid-column:1/-1}
+ .holiday-grid{grid-template-columns:1fr 1fr}
+ .holiday-card:last-child{grid-column:1/-1}
+ .how-assurance{grid-template-columns:1fr;gap:20px}
+}
+@media(max-width:560px){
+ .promo-ribbon{padding:10px 14px;font-size:8px;letter-spacing:.08em}
+ header{padding:0 6vw}
+ .brand{font-size:17px;letter-spacing:.22em}
+ .brand small{font-size:7px;letter-spacing:.22em}
+ section{padding:72px 6vw}
+ .hero{height:660px}
+ .hero:before{background:linear-gradient(90deg,rgba(10,24,21,.72),rgba(10,24,21,.25)),url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85') center/cover}
+ .hero-content{margin:0;padding:35px 7vw}
+ .hero h1{font-size:clamp(49px,13vw,66px);line-height:1.02}
+ .hero p{font-size:13px;line-height:1.9}
+ .hero-kicker{font-size:7px;letter-spacing:.1em;line-height:1.6}
+ .section-head{margin-bottom:36px}
+ .section-head h2{font-size:36px}
+ .intro-photo{height:330px}
+ .intro-copy h2{font-size:40px}
+ .destination-grid,.price-grid,.holiday-grid,.step-grid{grid-template-columns:1fr}
+ .destination,.destination:first-child{height:340px;grid-column:auto}
+ .price-card{min-height:320px;padding:27px 24px}
+ .holiday-card,.holiday-card:last-child{grid-column:auto;min-height:390px;padding:25px}
+ .holiday-card h3{font-size:31px}
+ .step-grid{gap:32px}
+ .step h3{min-height:0;font-size:23px}
+ .step p{font-size:12px}
+ .how-assurance{margin-top:38px;padding:24px 0}
+ .cta-band{padding:72px 7vw}
+ .footer-top{gap:35px}
+ .footer-links{gap:30px}
+ .copyright{line-height:1.8}
+ .form-grid{grid-template-columns:1fr}
+ .field.full{grid-column:auto}
+ .modal-box{padding:24px 19px}
+ .form-actions{align-items:flex-start;flex-direction:column}
+ .form-actions .btn{width:100%}
+}
+
+
+.package-details{margin-top:78px}
+.comparison-wrap{overflow-x:auto;border:1px solid var(--line);background:#fffefa}
+.comparison{width:100%;border-collapse:collapse;min-width:760px;text-align:left;font-size:11px}
+.comparison th{background:#203b33;color:#fff;padding:17px 14px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
+.comparison th:first-child{width:23%}
+.comparison td{padding:15px 14px;border-bottom:1px solid var(--line);color:#53615a;line-height:1.6}
+.comparison td:first-child{font-weight:600;color:var(--ink)}
+.comparison tbody tr:last-child td{border-bottom:0}
+.comparison tbody tr:nth-child(even){background:#f7f6f1}
+.package-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:26px}
+.package-notes>div{padding:24px 22px;background:#f5f3ed;border-top:2px solid var(--gold)}
+.package-notes strong{font:500 20px var(--serif);color:var(--ink)}
+.package-notes p{font-size:11px;line-height:1.9;color:var(--muted);margin-bottom:0}
+@media(max-width:850px){.package-notes{grid-template-columns:1fr}}
+
+
+/* All package cards use the same neutral state; selection styling is reserved for actual user interaction. */
+.price-card.featured{background:var(--paper)!important;color:var(--ink)!important;border:1px solid var(--line)!important;box-shadow:none!important;transform:none!important}
+.price-card.featured h3,.price-card.featured p,.price-card.featured li{color:var(--ink)!important}
+.price-card.featured .tag{color:var(--gold)!important}
+.price-card.featured .offer-price{color:#98784e!important}
+.price-card.featured button{color:var(--ink)!important;border-color:var(--gold)!important}
+
+
+/* Stronger contrast for the package area without using a solid green featured card */
+#packages,.pricing-section,.packages-section{background:#eae6dc!important}
+.price-grid{gap:20px}
+.price-card{
+  background:#fffdf8!important;
+  border:1px solid #d8cfbf!important;
+  box-shadow:0 8px 24px rgba(38,49,42,.055)!important;
+  position:relative;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.price-card:before{
+  content:"";
+  position:absolute;
+  top:-1px;left:0;right:0;height:3px;
+  background:#b69a70;
+  opacity:.8;
+}
+.price-card:hover{
+  transform:translateY(-4px);
+  border-color:#b69a70!important;
+  box-shadow:0 16px 34px rgba(38,49,42,.11)!important;
+}
+.price-card h3{color:#172b26!important}
+.price-card .offer-price,.price-card .price{color:#987448!important}
+.price-card .was{color:#8d918a!important}
+.price-card p{color:#65736c!important}
+.price-card li{color:#35443d!important}
+.price-card .tag{color:#9a8059!important}
+.price-card button{color:#263a32!important;border-color:#b69a70!important}
+.price-card.featured{
+  background:#fffdf8!important;
+  border:1px solid #c6ad83!important;
+  box-shadow:0 10px 28px rgba(38,49,42,.08)!important;
+}
+.price-card.featured:before{height:4px;opacity:1}
+.launch-note,.holiday-offer,.promo-box{background:#e5dccb}
+@media(max-width:560px){
+  .price-grid{gap:16px}
+  .price-card{box-shadow:0 6px 18px rgba(38,49,42,.07)!important}
+}
+
+
+/* Selected package state: forest green appears only after an actual user selection. */
+.price-card{cursor:pointer}
+.price-card.selected{
+  background:#1d4037!important;border-color:#1d4037!important;
+  box-shadow:0 16px 36px rgba(20,45,37,.22)!important;transform:translateY(-3px)
+}
+.price-card.selected:before{background:#d2b887;opacity:1}
+.price-card.selected h3,.price-card.selected p,.price-card.selected li,
+.price-card.selected button{color:#fff!important}
+.price-card.selected .tag{color:#d8c19a!important}
+.price-card.selected .offer-price,.price-card.selected .price{color:#e0c397!important}
+.price-card.selected .was{color:#bdc9c2!important}
+.price-card.selected li:before{color:#d8bd8d!important}
+.price-card.selected button{border-color:#d8bd8d!important}
+
+</style></head>
+<body><div class="topline"></div><div class="promo-ribbon"><strong>WAYVEROS HOLIDAY LAUNCH</strong> · Enjoy 15% off trip planning through December 31, 2026 <a href="#pricing">Explore offer ↗</a></div>
+<header><a class="brand" href="#home">WAYVEROS<small>JOURNEYS, THOUGHTFULLY DESIGNED</small></a><nav class="nav" id="nav"><a href="#approach">OUR APPROACH</a><a href="#destinations">DESTINATIONS</a><a href="#pricing">PLANNING</a><a href="#holiday">HOLIDAY COLLECTION</a><a href="#how">HOW IT WORKS</a><a class="nav-cta" href="#" onclick="openPlanner();return false">PLAN YOUR JOURNEY</a></nav><button class="menu" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button></header>
+<main id="home"><section class="hero"><div class="hero-content"><div class="hero-kicker">Holiday launch · 15% off through Dec 31, 2026</div><div class="eyebrow">A more considered way to travel</div><h1>The world,<br>well wandered.</h1><p>Meaningful journeys begin with thoughtful details. We bring your ideas, our expertise, and intelligent planning together to create a trip that feels entirely your own.</p><button class="btn" onclick="openPlanner()">Begin planning&nbsp; ↗</button></div><div class="hero-note">Independent travel planning · Made personal</div></section>
+<section class="intro" id="approach"><div class="intro-photo" role="img" aria-label="Colorful coastal village in Italy"></div><div class="intro-copy"><div class="eyebrow">The Wayveros perspective</div><h2>Not just where<br>you go. How it feels.</h2><p>Every traveler has a different idea of the perfect journey. We take the time to understand yours — then shape the moving pieces into a considered itinerary, from the places worth lingering in to the small details that make a trip memorable.</p><p>Thoughtful technology helps us explore the possibilities. A human travel planner brings the care, context, and final judgment.</p><a class="text-link" href="#how">Discover our approach&nbsp; ↗</a></div></section>
+<section class="destinations" id="destinations"><div class="section-head"><div class="eyebrow">A world of possibilities</div><h2>Find your kind of somewhere.</h2><p>From slow coastal days to culture-rich city stays, your next chapter starts with a place that speaks to you.</p></div><div class="destination-grid"><article class="destination"><div><small>Italy · Europe</small><h3>The art of slowing down</h3></div></article><article class="destination"><div><small>Greek Islands · Europe</small><h3>Blue, in every direction</h3></div></article><article class="destination"><div><small>Beyond the expected</small><h3>Take the scenic route</h3></div></article></div></section>
+
+<section class="holiday" id="holiday"><div class="section-head"><div class="eyebrow">The season, thoughtfully planned</div><h2>Make the holidays a journey.</h2><p>From festive city lights to a memorable New Year's escape, discover seasonal inspiration for the moments worth traveling for.</p></div><div class="holiday-grid">
+<article class="holiday-card"><div class="eyebrow">Festive city breaks</div><h3>Christmas Escape</h3><p>Discover glowing streets, festive markets, winter traditions and cozy seasonal experiences.</p><div class="holiday-meta">2–4 days · From $79</div><button onclick="openPlanner('Christmas Escape')">Plan a Christmas escape ↗</button></article>
+<article class="holiday-card"><div class="eyebrow">Welcome a new year</div><h3>New Year's Getaway</h3><p>Celebrate the countdown with a city break shaped around celebrations, dining and unforgettable moments.</p><div class="holiday-meta">3–5 days · From $99</div><button onclick="openPlanner('New Year&#39;s Getaway')">Plan a New Year's trip ↗</button></article>
+<article class="holiday-card"><div class="eyebrow">A longer seasonal story</div><h3>The Holiday Journey</h3><p>Bring Christmas and New Year's together in one considered multi-stop itinerary.</p><div class="holiday-meta">7–10 days · From $229</div><button onclick="openPlanner('The Holiday Journey')">Explore the holiday journey ↗</button></article>
+</div><p class="fineprint">Seasonal prices are starting estimates for straightforward itineraries. Final planning fees depend on trip length, destinations and complexity. The 15% launch offer applies to eligible planning fees through December 31, 2026.</p></section>
+
+
+<section class="pricing" id="pricing"><div class="section-head"><div class="eyebrow">Personalized planning</div><h2>Choose how far to wander.</h2><p>Thoughtful trip planning with clear starting prices. Your travel expenses — such as flights and hotels — are booked and paid for separately.</p></div>
+<div class="launch-note"><b>Holiday launch offer</b> Take 15% off eligible planning packages when you book by December 31, 2026.</div>
+<div class="price-grid">
+<article class="price-card"><div class="tag">A little time away</div><h3>The Getaway</h3><div class="offer-price">$67.15 <span class="was">$79</span></div><p>A focused plan for a short, easy-to-follow escape built around one destination and your top priorities.</p><ul><li>1–3 travel days</li><li>One city or resort area</li><li>Day-by-day schedule</li><li>Key sights, dining ideas & local tips</li><li>One refinement round</li></ul><button onclick="selectPackage('The Getaway', this)">Explore this plan ↗</button></article>
+<article class="price-card featured"><div class="tag">Most versatile</div><h3>The Signature Journey</h3><div class="offer-price">$169.15 <span class="was">$199</span></div><p>A balanced, personalized trip plan with more room for discovery, thoughtful pacing and curated experiences.</p><ul><li>4–7 travel days</li><li>Up to 2 destinations in one region</li><li>Daily itinerary with timing guidance</li><li>Stay-area, dining & experience suggestions</li><li>Transport guidance between stops</li><li>One refinement round</li></ul><button onclick="selectPackage('The Signature Journey', this)">Explore this plan ↗</button></article>
+<article class="price-card"><div class="tag">Time to explore</div><h3>The Grand Journey</h3><div class="offer-price">$279.65 <span class="was">$329</span></div><p>A deeper itinerary for longer stays, with a considered route, varied experiences and practical details across the trip.</p><ul><li>8–14 travel days</li><li>Up to 3 destinations in one region</li><li>Detailed daily itinerary</li><li>Route, transfer & travel-time guidance</li><li>Dining, culture & activity recommendations</li><li>Two refinement rounds</li></ul><button onclick="selectPackage('The Grand Journey', this)">Explore this plan ↗</button></article>
+<article class="price-card"><div class="tag">More than one stop</div><h3>The Expedition</h3><div class="offer-price">$381.65+ <span class="was">$449+</span></div><p>A connected multi-stop journey designed to make complex routes feel coherent, comfortable and rewarding.</p><ul><li>Typically 10–21 travel days</li><li>3–5 cities or multiple countries</li><li>Intercity route and transfer planning</li><li>Day-by-day plan for each stop</li><li>Pacing and logistics coordination</li><li>Two refinement rounds</li></ul><button onclick="selectPackage('The Expedition', this)">Explore this plan ↗</button></article>
+<article class="price-card"><div class="tag">A higher level of care</div><h3>The Private Collection</h3><div class="offer-price">$594.15+ <span class="was">$699+</span></div><p>Our most tailored planning experience for ambitious, intricate or highly personal journeys that need closer human attention.</p><ul><li>Custom duration and destination scope</li><li>Complex, multi-region or special-interest trips</li><li>In-depth preference and needs review</li><li>Priority human planning oversight</li><li>Custom itinerary and logistics notes</li><li>Up to three refinement rounds</li></ul><button onclick="selectPackage('The Private Collection', this)">Explore this plan ↗</button></article>
+<article class="price-card"><div class="tag">An extra set of eyes</div><h3>Travel Expert Review</h3><div class="price">+$79 <span>/ optional add-on</span></div><p>A dedicated human review of an itinerary draft, with practical feedback before you finalize your plans.</p><ul><li>Review of one itinerary draft</li><li>Clarity, pacing & feasibility feedback</li><li>Suggestions for improvements</li><li>One consolidated feedback round</li></ul><button onclick="selectPackage('Travel Expert Review', this)">Add to my journey ↗</button></article>
+</div><p class="fineprint">Displayed launch prices reflect a 15% promotional reduction from the proposed starting prices. Final prices may vary with itinerary complexity. Package prices are planning fees only and do not include travel bookings or third-party costs.</p>
+
+<div class="package-details">
+  <div class="section-head"><div class="eyebrow">Know exactly what is included</div><h2>More than a list of places.</h2><p>Each plan is built around a clearly defined scope. The higher tiers add more destinations, deeper logistics and closer human involvement — not simply more pages.</p></div>
+  <div class="comparison-wrap">
+    <table class="comparison">
+      <thead><tr><th>Included in your plan</th><th>The Getaway</th><th>Signature</th><th>Grand</th><th>Expedition</th><th>Private</th></tr></thead>
+      <tbody>
+        <tr><td>Trip duration</td><td>1–3 days</td><td>4–7 days</td><td>8–14 days</td><td>10–21 days*</td><td>Custom</td></tr>
+        <tr><td>Destination scope</td><td>1 destination</td><td>Up to 2 nearby</td><td>Up to 3 in one region</td><td>3–5 cities / multi-country</td><td>Custom / complex</td></tr>
+        <tr><td>Personalized daily itinerary</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Dining & experience ideas</td><td>Key picks</td><td>Curated</td><td>Expanded</td><td>Across all stops</td><td>Highly tailored</td></tr>
+        <tr><td>Transport & route guidance</td><td>Local basics</td><td>Between stops</td><td>Detailed</td><td>Coordinated route</td><td>Custom logistics</td></tr>
+        <tr><td>Human refinement rounds</td><td>1</td><td>1</td><td>2</td><td>2</td><td>Up to 3</td></tr>
+        <tr><td>Human oversight</td><td>Quality check</td><td>Quality check</td><td>Detailed review</td><td>Detailed review</td><td>Priority oversight</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="package-notes">
+    <div><strong>What you receive</strong><p>A digital day-by-day itinerary with destination notes, recommended activities, dining ideas and practical travel guidance. A PDF version is included with every package.</p></div>
+    <div><strong>How revisions work</strong><p>After delivery, send your feedback in one consolidated message per revision round. A new destination, major date change or significant change in trip scope may require a revised quote.</p></div>
+    <div><strong>What is not included</strong><p>Wayveros sells trip-planning services, not travel inventory. Flights, accommodation, restaurant reservations, tickets, insurance, visas and other third-party purchases are not included or booked unless a future service explicitly says otherwise.</p></div>
+  </div>
+  <p class="fineprint">*Expedition duration is a typical planning range, not a hard limit. All destination counts and inclusions are proposed package boundaries. Final scope and fee are confirmed after reviewing your trip brief. The 15% launch offer applies to eligible planning fees through December 31, 2026.</p>
+</div>
+
+</section>
+
+
+<section class="steps" id="how">
+  <div class="section-head">
+    <div class="eyebrow">A clear, considered process</div>
+    <h2>From your first idea to a journey worth remembering.</h2>
+    <p>Personalized travel planning, made simple. You stay informed at every stage while we take care of bringing the details together.</p>
+  </div>
+  <div class="step-grid">
+    <article class="step"><b>01</b><h3>Choose your planning experience.</h3><p>Explore our planning packages and select the level of support that fits your trip. Not sure which one is right? Start with your trip details and we’ll help determine the best fit.</p></article>
+    <article class="step"><b>02</b><h3>Tell us what your journey looks like.</h3><p>Complete a short trip questionnaire with your destinations, dates, travelers, budget range, interests and travel style. Share the little details that would make the experience feel like yours.</p></article>
+    <article class="step"><b>03</b><h3>We create and carefully review your plan.</h3><p>After checkout, our planning system prepares a tailored itinerary draft. A WAYVEROS travel planner then reviews the recommendations, refines the details and checks the overall flow before it is approved.</p></article>
+    <article class="step"><b>04</b><h3>Receive your itinerary. Get ready to go.</h3><p>When your plan is ready, we’ll email you and make it available in your customer account. View your day-by-day itinerary and download a convenient PDF to take along.</p></article>
+  </div>
+  <div class="how-assurance">
+    <div><strong>Thoughtful technology.</strong><span>AI helps us organize ideas and build a first draft.</span></div>
+    <div><strong>Human attention.</strong><span>A planner reviews and approves the itinerary before it is delivered.</span></div>
+    <div><strong>Clear communication.</strong><span>Follow your planning progress from submission to completion.</span></div>
+  </div>
+  <p class="fineprint">WAYVEROS provides personalized trip-planning services. Flights, accommodation, tickets and other travel purchases are not included in the planning fee unless expressly stated.</p>
+</section>
+
+<section class="cta-band"><div class="eyebrow">Your next journey starts here</div><h2>Let's make it meaningful.</h2><p>Tell us a little about the trip you have in mind. We'll take it from there.</p><button class="btn" onclick="openPlanner()">Start your trip plan&nbsp; ↗</button></section></main>
+<footer><div class="footer-top"><div class="footer-brand">WAYVEROS<p>Thoughtful travel planning for journeys that stay with you.</p></div><div class="footer-links"><div><strong>Explore</strong><a href="#approach">Our approach</a><a href="#destinations">Destinations</a><a href="#pricing">Planning packages</a><a href="#holiday">Holiday collection</a></div><div><strong>Plan</strong><a href="#how">How it works</a><a href="#" onclick="openPlanner();return false">Start planning</a><a href="mailto:hello@wayveros.com">Contact</a></div></div></div><div class="copyright"><span>© 2026 WAYVEROS. ALL RIGHTS RESERVED.</span><span>INDEPENDENT TRAVEL PLANNING</span><span><a href="customer.html">Customer portal demo</a> · <a href="admin.html">Admin demo</a></span></div></footer>
+<div class="modal" id="planner"><div class="modal-box"><div class="modal-head"><div><div class="eyebrow">Your journey, your way</div><h2>Let's start with an idea.</h2></div><button class="close" onclick="closePlanner()" aria-label="Close">×</button></div><form id="tripForm"><div class="form-grid"><div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="Full name" required></div><div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div><div class="field"><label for="package">Planning package</label><select id="package" name="package"><option>Not sure yet</option><option>The Getaway</option><option>The Signature Journey</option><option>The Grand Journey</option><option>The Expedition</option><option>The Private Collection</option><option>Travel Expert Review</option><option>Christmas Escape</option><option>New Year&#39;s Getaway</option><option>The Holiday Journey</option></select></div><div class="field"><label for="travelers">Number of travelers</label><select id="travelers" name="travelers"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select></div><div class="field"><label for="destination">Where would you like to go?</label><input id="destination" name="destination" placeholder="e.g. Japan, Italy, anywhere..." required></div><div class="field"><label for="duration">Trip length</label><select id="duration" name="duration"><option>1–3 days</option><option>4–7 days</option><option>8–14 days</option><option>15+ days</option><option>Flexible</option></select></div><div class="field"><label for="date">Approximate departure</label><input id="date" name="date" type="date"></div><div class="field"><label for="budget">Estimated trip budget (per person)</label><select id="budget" name="budget"><option>Prefer not to say</option><option>Under $1,500</option><option>$1,500–$3,000</option><option>$3,000–$5,000</option><option>$5,000–$10,000</option><option>$10,000+</option></select></div><div class="field full"><label for="notes">What would make this trip special?</label><textarea id="notes" name="notes" placeholder="Your interests, travel style, must-see places, or anything else we should know..."></textarea></div></div><div class="form-actions"><small>This is an initial inquiry — no payment is collected here.</small><button class="btn" type="submit">Send trip inquiry ↗</button></div><div class="success" id="success">Thank you — this demo form has validated your inquiry locally. It is not yet connected to email, payments, customer accounts or the Wayveros planning dashboard.</div></form></div></div>
+<script>
+function selectPackage(pkg, button){
+  document.querySelectorAll('.price-card').forEach(card=>card.classList.remove('selected'));
+  const card=button ? button.closest('.price-card') : null;
+  if(card) card.classList.add('selected');
+  openPlanner(pkg);
+}
+function openPlanner(pkg){
+  document.getElementById('planner').classList.add('open');
+  document.body.style.overflow='hidden';
+  if(pkg) document.getElementById('package').value=pkg;
+}
+function closePlanner(){
+  document.getElementById('planner').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.getElementById('pricing').addEventListener('click',e=>{
+  const card=e.target.closest('.price-card');
+  if(!card || e.target.closest('button')) return;
+  document.querySelectorAll('.price-card').forEach(item=>item.classList.remove('selected'));
+  card.classList.add('selected');
+});
+document.getElementById('planner').addEventListener('click',e=>{if(e.target.id==='planner')closePlanner()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closePlanner()});
+document.getElementById('tripForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  document.getElementById('success').classList.add('show');
+});
+</script>
+</body></html>
